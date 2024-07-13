@@ -8,7 +8,7 @@ int n;
 int i = 0;
 
 void generator(int k, ll weights[], ll totals[]) {
-  if(k == n) {
+  if(k == n) { // Finishe subset generated
     int size = subset.size(); 
     ll total = 0; 
      
