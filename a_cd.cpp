@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  // std::ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+  std::ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
   while(true) {
     int n, m;
