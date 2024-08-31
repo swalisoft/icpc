@@ -7,18 +7,24 @@ int n = 3;
 vector<int> permutation;
 bool chose[3 + 1];
 
-void generator() {
-  if (permutation.size() == n) {
-    for(int i=0; i < n; i++) {
+void generator()
+{
+  if (permutation.size() == n)
+  {
+    for (int i = 0; i < n; i++)
+    {
       cout << permutation[i];
     }
 
     cout << endl;
   }
 
-  else {
-    for (int i = 1; i <= n; i++) {
-      if (chose[i]) continue;
+  else
+  {
+    for (int i = 1; i <= n; i++)
+    {
+      if (chose[i])
+        continue;
 
       chose[i] = true;
       permutation.push_back(i);
@@ -31,6 +37,7 @@ void generator() {
   }
 }
 
-int main() {
+int main()
+{
   generator();
 }
